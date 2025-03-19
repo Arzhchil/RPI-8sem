@@ -12,12 +12,15 @@ import PrivateRoute from "../private-route/private-route";
 
 import { FullOffer, OffersList } from "../../types/offer";
 import { Favorite } from "../../types/favorite";
+import { Review } from "../../types/review";
+import reviews from "../../mocks/reviews";
 
 type AppMainPageProps = {
   rentalOffersCount: number;
   offers: FullOffer[];
   offersList: OffersList[];
   favorites: Favorite[];
+  reviews: Review[];
 };
 
 function App({
@@ -49,7 +52,7 @@ function App({
         <Route path={AppRoute.Login} element={<LoginPage />} />
         <Route
           path={`${AppRoute.Offer}/:id`}
-          element={<OfferPage offers={offers} />}
+          element={<OfferPage offers={offers} reviews={reviews} neighbourhoodPlaces={offersList}/>}
         />
         <Route path="*" element={<ErrorPage />} />
       </Routes>

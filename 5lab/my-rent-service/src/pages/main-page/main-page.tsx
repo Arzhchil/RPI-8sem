@@ -2,6 +2,7 @@ import { JSX } from "react";
 import { Logo } from "../../components/logo/logo";
 import CitiesCardList from "../../components/CitiesCardList/CitiesCardList";
 import { OffersList } from "../../types/offer";
+import Map from "../../components/Map/Map";
 
 type MainPageProps = {
   rentalOffersCount: number;
@@ -121,7 +122,7 @@ function MainPage({
               </div>
             </section>
             <div className="cities__right-section">
-              <section className="cities__map map"></section>
+              <Map offers={offersList} mapStyle={"cities__map map"} />
             </div>
           </div>
         </div>

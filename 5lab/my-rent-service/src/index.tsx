@@ -5,6 +5,8 @@ import { Setting } from "./const/const";
 import offers from "./mocks/offers";
 import { offersList } from "./mocks/offers-list";
 import { favorites } from "./mocks/favorites";
+import 'leaflet/dist/leaflet.css';
+import reviews from "./mocks/reviews";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -13,6 +15,7 @@ createRoot(document.getElementById("root")!).render(
       offers={offers}
       offersList={offersList}
       favorites={favorites}
+      reviews={reviews}
     />
   </StrictMode>
 );

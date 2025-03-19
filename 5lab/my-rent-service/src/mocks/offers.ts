@@ -9,10 +9,10 @@ const offers: FullOffer[] = [
     type: "apartment",
     price: 370,
     city: {
-      name: "Paris",
+      name: "Amsterdam",
       location: {
-        latitude: 48.85661,
-        longitude: 2.351499,
+        latitude: 52.370216,
+        longitude: 4.895168,
         zoom: 13,
       },
     },
@@ -71,8 +71,8 @@ const offers: FullOffer[] = [
       },
     },
     location: {
-      latitude: 52.372216,
-      longitude: 4.898168,
+      latitude: 52.3909553943508,
+      longitude: 4.929309666406198,
       zoom: 16,
     },
     isFavorite: false,
@@ -94,7 +94,7 @@ const offers: FullOffer[] = [
       avatarUrl: "/img/avatar-max.jpg",
     },
     images: [
-      "/img/apartment-04.jpg",
+      "/img/apartment-03.jpg",
       "/img/apartment-03.jpg",
       "/img/apartment-02.jpg",
       "/img/apartment-01.jpg",
@@ -111,16 +111,16 @@ const offers: FullOffer[] = [
     type: "house",
     price: 420,
     city: {
-      name: "Cologne",
+      name: "Amsterdam",
       location: {
-        latitude: 50.937531,
-        longitude: 6.960279,
+        latitude: 52.370216,
+        longitude: 4.895168,
         zoom: 13,
       },
     },
     location: {
-      latitude: 50.939531,
-      longitude: 6.962279,
+      latitude: 52.3809553943508,
+      longitude: 4.939309666406198,
       zoom: 16,
     },
     isFavorite: true,
@@ -151,57 +151,6 @@ const offers: FullOffer[] = [
       "/img/studio-01.jpg",
     ],
     maxAdults: 4,
-  },
-  {
-    id: "c3e5f6g7-8d9e-0f1a-b2c3-d4e5f6g7h8i",
-    title: "Luxury Urban Loft",
-    description:
-      "A luxurious loft with modern design and top-notch amenities. Located in a vibrant neighborhood.",
-    type: "loft",
-    price: 550,
-    city: {
-      name: "Hamburg",
-      location: {
-        latitude: 53.551086,
-        longitude: 9.993682,
-        zoom: 13,
-      },
-    },
-    location: {
-      latitude: 53.553086,
-      longitude: 9.995682,
-      zoom: 16,
-    },
-    isFavorite: true,
-    isPremium: true,
-    rating: 4.6,
-    bedrooms: 2,
-    goods: [
-      "Wi-Fi",
-      "Heating",
-      "Kitchen",
-      "Laptop friendly workspace",
-      "Baby seat",
-      "Air conditioning",
-      "Washing machine",
-      "Towels",
-      "Dishwasher",
-      "Breakfast",
-    ],
-    host: {
-      isPro: true,
-      name: "Max",
-      avatarUrl: "/img/avatar-max.jpg",
-    },
-    images: [
-      "/img/room.jpg",
-      "/img/apartment-04.jpg",
-      "/img/apartment-02.jpg",
-      "/img/apartment-01.jpg",
-      "/img/apartment-03.jpg",
-      "/img/studio-01.jpg",
-    ],
-    maxAdults: 3,
   },
 ];
 
