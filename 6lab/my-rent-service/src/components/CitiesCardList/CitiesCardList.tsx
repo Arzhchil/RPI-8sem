@@ -3,12 +3,13 @@ import CitiesCard from "../cities-card/cities-card";
 
 type CitiesCardListProps = {
   offersList: OffersList[];
+  onListItemHover: (offerId: string) => void;
 };
 
-function CitiesCardList({ offersList }: CitiesCardListProps) {
+function CitiesCardList({ offersList, onListItemHover }: CitiesCardListProps) {
   return (
     <div className="cities__places-list places__list tabs__content">
-      {Array.from(offersList, (item) => (
+      {offersList.map((item) => (
         <CitiesCard
           key={item.id}
           id={item.id}
@@ -18,10 +19,11 @@ function CitiesCardList({ offersList }: CitiesCardListProps) {
           isPremium={item.isPremium}
           previewImage={item.previewImage}
           rating={item.rating}
+          onHover={onListItemHover}
         />
       ))}
     </div>
   );
 }
 
-export default CitiesCardList
+export default CitiesCardList;

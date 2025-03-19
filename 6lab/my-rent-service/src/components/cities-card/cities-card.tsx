@@ -1,4 +1,4 @@
-import { JSX, useState } from "react";
+import { JSX } from "react";
 import { AppRoute } from "../../const/const";
 import { Link } from "react-router-dom";
 
@@ -10,6 +10,7 @@ type CitiesCardProps = {
   isPremium: boolean;
   previewImage: string;
   rating: number;
+  onHover?: (id: string) => void;
 };
 
 function CitiesCard({
@@ -20,13 +21,13 @@ function CitiesCard({
   isPremium,
   previewImage,
   rating,
+  onHover,
 }: CitiesCardProps): JSX.Element {
-  const [, setOfferId] = useState("");
   return (
     <article
       className="cities__card place-card"
-      onMouseOver={() => setOfferId(id)}
-      onMouseOut={() => setOfferId("")}
+      onMouseOver={() => onHover?.(id)}
+      onMouseOut={() => onHover?.("")}
     >
       {isPremium && (
         <div className="place-card__mark">
